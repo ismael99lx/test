@@ -717,6 +717,7 @@ footer .centro
        align-items: center;
        list-style: none;
        justify-content: space-evenly;
+	   z-index:9999;
    }
    .menu-r ul li
    {
