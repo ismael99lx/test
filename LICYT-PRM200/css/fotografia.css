@@ -1,0 +1,1089 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap');*
+*{
+	padding: 0;
+	margin: 0;
+
+}
+:root 
+{
+	--lila: #2A114A;
+	--celeste: #58FFFF;
+}
+body
+{
+	font-family: 'Urbanist', sans-serif;
+}
+.contenedor 
+{
+	width: 100%;
+}
+header
+{
+    background-position: center bottom;
+    background-size: cover;
+    background-image: url(../img/fondo2.png);
+    display: flex;
+    align-items: center;
+   
+
+    
+}
+header .menu
+{
+    background-position: center bottom;
+    background-size: cover;
+    background-image: url(../img/fondo2.png);
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header .menu .logo
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .menu .logo img
+{
+    width: 70%;
+}
+
+header .menu nav
+
+{
+	display: flex;
+	justify-content: center;
+	
+}
+header .menu nav ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header .menu nav ul li
+{
+    
+    position: relative;
+    float: left;
+}
+header .menu nav ul li a
+{
+    font-size: 1em;
+    padding: 10px 20px ;
+    color: #fff;
+    display: block;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-right: 25px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+header .menu nav ul li a:hover
+{
+    color: var(--celeste);
+    transform: scale(1.1);
+}
+.menu-r
+{
+	display: none;
+}
+#menu
+{
+    display: none;
+
+}
+.menu-icono
+{
+    width: 25px;
+
+}
+
+.menu label
+{
+    cursor: pointer;
+    display: none;
+}
+.botones
+{
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 12px;
+	padding-right: 20px;
+}
+.boton 
+{
+	padding: 6px 12px ;
+	border: 1px solid #fff;
+	border-radius: 24px;
+	color: #fff;
+	text-decoration: none;
+}
+.boton:hover
+{
+	background:var(--celeste);
+}
+
+section 
+{
+    width: 100%;
+}
+section .portada
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo2.png);
+   
+    display: flex;
+}
+
+section .portada .info 
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+section .portada  .info .txt
+{
+    width: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+section .portada  .info .txt h1
+{
+     font-size: 3em;
+     color: #fff;
+     font-weight: 500;
+
+}
+section .portada  .info .info-b
+{
+    width: 30%;
+    ;
+    border-radius: 24px;
+    border: 1px solid #fff;
+    transition: 0.3s;
+}
+section .portada  .info .info-b a 
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 200;
+}
+section .portada  .info .info-b:hover
+{
+    background: var(--celeste);
+}
+section .portada .port-img 
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+section .portada .port-img:hover
+{
+    transform: scale(1.1);
+}
+section .portada .port-img img 
+{
+    width: 90%;
+}
+section .publico
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    box-sizing: border-box;
+
+}
+section .publico .title
+{
+    width: 80%;
+    padding-bottom: 5%;
+}
+section .publico .title h1 
+{
+    color: #000;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+section .publico .cont 
+{
+    display: flex;
+
+
+
+}
+section .publico .cont .cont-left
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4%;
+    align-items: center;
+    width: 50%; 
+    gap: 20px; 
+}
+section .publico .cont .cont-left .rec
+{
+    width: 70%;
+    height: 50px;
+    background: #fff;
+    border-radius: 36px;
+    box-shadow: 4px 5px 6px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .publico .cont .cont-left .rec a 
+{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+
+}
+section .publico .cont .cont-left .rec2
+{
+    width: 70%;
+    height: 50px;
+    background: var(--celeste);
+    border-radius: 36px;
+    box-shadow: 4px 5px 6px 4px rgba(0, 0, 0, 0.3);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .publico .cont .cont-left .rec2 a 
+{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+}
+section .publico .cont .cont-der 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 40%;
+    text-align: center;
+    
+}
+section .publico .cont .cont-der .img-der
+{
+    width: 70%;
+    display: flex;
+    ;
+    justify-content: center;
+
+}
+section .publico .cont .cont-der .img-der img 
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+section .sec3 
+{
+    background-image: url(../img/fondo2.png);
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    box-sizing: border-box;
+    gap: 60px;
+}
+section .sec3 .title
+{
+    width: 85%;
+    
+    text-align: left;
+
+}
+section .sec3 .title h1 
+{
+    font-size: 3em ;
+    font-weight: 500;
+    color: #000;
+}
+section .sec3 .cajas 
+{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+}
+section .sec3 .cajas .caja1
+{
+    width: 23%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    padding: 2%;    
+    box-sizing: border-box;
+    text-align: center;
+    gap: 10px;
+}
+section .sec3 .cajas .caja1 .icon i 
+{
+    font-size: 5em ;
+    color: var(--celeste);
+
+}
+section .sec3 .cajas .caja1 .txt1 p 
+{
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #fff;
+}
+.sec4
+{
+   width: 100%;
+   height: 80vh;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 5%;
+
+}
+.sec4 .title
+{
+    width: 100%;
+    text-align: center;
+} 
+.sec4 .title h1
+{
+    font-weight: 800;
+    font-size: 3em;
+    color: var(--lila);
+}
+ .sec4 .cuadros 
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+}
+  .sec4 .cuadros .cuad1
+{
+    width: 30%;
+    background: #fff;
+    box-shadow: 4px 5px 6px 4px rgba(0, 0, 0, 0.3);;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+  .sec4 .cuadros .cuad2
+{
+    width: 30%;
+    background: #CDFFF6;
+    box-shadow: 4px 5px 6px 4px rgba(0, 0, 0, 0.3);;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.sec5
+{
+    width: 100%;
+    height: 40vh;
+    background: var(--lila);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec5 .imgs 
+{
+    width: 40%;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+.sec5 .imgs img 
+{
+    width: 20%;
+}
+.sec5 .txt h1 
+{
+    font-size: 3em;
+   font-weight: 300;
+   color: #fff;
+}
+.sec6 
+{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.sec6 .title
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.sec6 .title h3 
+{
+    font-size: 2.3em;
+    font-weight: 600;
+    color: #000;
+}
+.sec6 .img 
+{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec6 .img img 
+{
+    width: 100%;
+    object-fit: cover;
+}
+.sec6 .txt
+{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.sec6 .txt ul li
+{
+   font-size: 1.2em;
+}
+.sec7 
+{
+    background-image: url(../img/fondo2.png);
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    box-sizing: border-box;
+    gap: 60px;
+}
+.sec7 .title
+{
+    width: 85%;
+    
+    text-align: right;
+
+}
+.sec7 .title h1 
+{
+    font-size: 3em ;
+    font-weight: 500;
+    color: #000;
+}
+ .sec7 .cajas 
+{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+}
+ .sec7 .cajas .caja1
+{
+    width: 23%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    padding: 2%;    
+    box-sizing: border-box;
+    text-align: center;
+    gap: 10px;
+}
+ .sec7 .cajas .caja1 .icon i 
+{
+    font-size: 4em ;
+    color: var(--celeste);
+
+}
+ .sec7 .cajas .caja1 .txt1 p 
+{
+    font-size: 1em;
+    font-weight: 300;
+    color: #fff;
+}
+.sec8 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.sec8 .title
+{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+
+}
+.sec8 .title h1 
+{
+    font-size: 2.7em;
+    font-weight: 700;
+    color: #000;
+}
+.sec8 .info
+{
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 5%;
+    box-sizing: border-box;
+}
+.sec8 .info-text 
+{
+    width: 30%;
+    height: 60vh;
+    border-radius: 36px;
+    background: #CDFFF6;
+    text-align: right;
+    padding: 3%;
+    box-sizing: border-box;
+    box-shadow: 4px 5px 6px 4px rgba(0, 0, 0, 0.3);;
+}
+.sec8 .info .info-text p 
+{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #000;
+}
+
+.sec8 .info-img
+{
+    width: 30%;
+    height: 60vh;
+    border-radius: 36px;
+    box-shadow: 4px 5px 6px 4px rgba(0, 0, 0, 0.3);;
+
+}
+.sec8 .info-img img 
+{
+    width: 100%;
+    object-fit: cover;
+}
+.sec8 .info-img span
+
+{
+    font-size: 1.2em ;
+    font-weight: 700;
+
+}
+ footer
+ {
+    
+    background: var(--lila);
+    display: flex;
+    padding: 10%;
+
+ }
+ footer .der 
+ {
+    width: 30%;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;  
+ }
+ footer .der a 
+ {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+ }
+ footer .centro
+ {
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+ }
+  footer .centro i 
+  {
+    color: #fff;
+    font-size: 2em;
+  }
+  footer .izq 
+  {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 10px;
+
+  }
+    footer .izq a 
+    {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1em ;
+    }
+
+
+
+    @media (max-width:650px)
+{
+	header
+{
+    
+	height: 60px;
+}
+.botones
+{
+	width: 50%;
+}
+header .menu
+{
+    height: 60px;
+    position: fixed;
+	background-position: center bottom;
+    background-size: cover;
+    background-image: url(../img/fondo2.png);
+}
+header .menu .logo
+{
+    width: 40%;
+}
+header .menu .logo img
+{
+    width: 50%;
+}
+	header .menu nav ul
+{
+    display:none;
+}
+.menu-r
+{
+	width: 100%;
+	height: 20px;
+	background: #01153A;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+}
+.menu-r ul
+{
+	width: 100%;
+	height: auto;
+	background: #000000;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	justify-content: space-evenly;
+}
+.menu-r ul li
+{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.menu-r ul li a
+{
+	color: #fff;
+	text-decoration: none;
+}
+section .portada
+{
+    flex-direction: column-reverse;
+    height: auto;
+}
+section .portada .info 
+{
+    width: 100%;
+
+    padding-top: 50px;
+}
+section .portada  .info .txt
+{
+    width: 80%;
+    
+}
+section .portada .port-img 
+{
+    width: 100%;
+}
+section .portada .port-img img 
+{
+    width: 70%;
+}
+section .publico .cont 
+{
+    display: flex;
+
+    width: 100%;
+
+}
+section .publico .cont 
+{
+    display: flex;
+    flex-direction: column;
+
+
+}
+section .publico .cont .cont-left
+{
+   
+    width: 100%; 
+    gap: 20px; 
+}
+section .publico .cont .cont-der 
+{
+    
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    
+}
+section .publico .cont .cont-der .img-der
+{
+    width: 70%;
+    display: flex;
+    ;
+    justify-content: center;
+
+}
+section .sec3 .title
+{
+    width: 85%;
+    
+    text-align: center;
+
+}
+
+section .sec3 .cajas .caja1
+{
+    width: 45%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    padding: 2%;    
+    box-sizing: border-box;
+    text-align: center;
+    gap: 10px;
+}
+.sec4
+{
+   width: 100%;
+   height: auto;
+    gap: 60px;
+    padding-bottom: 5%;
+
+}
+.sec4 .cuadros .cuad1
+{
+    width: 100%;
+    background: #fff;
+    box-shadow: 4px 5px 6px 4px rgba(0, 0, 0, 0.3);;
+    border-radius: 36px;
+
+}
+.sec4 .cuadros .cuad2
+{
+    width: 100%;
+    background: #CDFFF6;
+    box-shadow: 4px 5px 6px 4px rgba(0, 0, 0, 0.3);;
+    border-radius: 36px;
+    display: flex;
+
+}
+.sec5
+{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+.sec5 .imgs 
+{
+    width: 80%;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10pxx;
+}
+.sec5 .imgs img 
+{
+    width: 20%;
+}
+.sec5 .txt h1 
+{
+    font-size: 3em;
+   font-weight: 300;
+   color: #fff;
+}
+.sec6 
+{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec6 .title
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.sec6 .img 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec6 .txt
+{
+    width: 100%;
+}
+.sec7 .title
+{
+    width: 85%;
+    
+    text-align: center;
+
+}
+.sec7 .cajas .caja1
+{
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    padding: 2%;    
+    box-sizing: border-box;
+    text-align: center;
+    gap: 10px;
+}
+.sec8 .info
+{
+    flex-direction: column;
+}
+.sec8 .info-text 
+{
+    width: 100%;
+    height: auto;
+    border-radius: 36px;
+    background: #CDFFF6;
+    text-align: right;
+    padding: 3%;
+    box-sizing: border-box;
+    box-shadow: 4px 5px 6px 4px rgba(0, 0, 0, 0.3);;
+}
+.sec8 .info-img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 36px;
+    box-shadow: 4px 5px 6px 4px rgba(0, 0, 0, 0.3);;
+    text-align: center;
+}
+.sec8 .info-img span
+
+{
+    font-size: 1.2em ;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+
+}
+
+
+
+
+
+@media (max-width:399px)
+{
+	header
+{
+    
+	height: 60px;
+}
+header .menu
+{
+    height: 60px;
+    position: fixed;
+	background-position: center bottom;
+    background-size: cover;
+    background-image: url(../img/fondo1.png);
+}
+header .menu .logo
+{
+    width: 40%;
+}
+header .menu .logo img
+{
+    width: 50%;
+}
+	header .menu nav ul
+{
+    display:none;
+}
+.menu-r
+{
+	width: 100%;
+	height: 20px;
+	background: #01153A;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+}
+.menu-r ul
+{
+	width: 100%;
+	height: auto;
+	background: #000000;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	justify-content: space-evenly;
+}
+.menu-r ul li
+{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.menu-r ul li a
+{
+	color: #fff;
+	text-decoration: none;
+}
+.botones
+{
+	width: 50%;
+}
+
+section .portada  .info .txt h1
+{
+     font-size: 2em;
+     color: #fff;
+     font-weight: 500;
+
+}
+
+section .sec3 .cajas .caja1
+{
+    width: 90%;
+}
+
+footer .der 
+{
+   width: 40%;
+   display: flex;
+   flex-direction: column; 
+   gap: 10px;  
+}
+footer .centro
+{
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+}
+footer .izq 
+  {
+  	width: 40%;
+  	display: flex;
+  	flex-direction: column;
+  	text-align: right;
+  	gap: 10px;
+
+  }
+  footer .der a 
+  {
+	  font-size: .8em;
+	  color: #fff;
+	  font-weight: 300;
+  }
+  footer .izq a 
+    {
+    	color: #fff;
+    	text-decoration: none;
+    	font-size: .8em ;
+    }
+}
