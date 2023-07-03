@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap');*
+*{
+	padding: 0;
+	margin: 0;
+
+}
+:root 
+{
+	--naranja: #FF902A;
+	--azul: #01153A;
+}
+body
+{
+	font-family: 'Urbanist', sans-serif;
+}
+.contenedor 
+{
+	width: 100%;
+}
+header
+{
+    background-position: center bottom;
+    background-size: cover;
+    background-image: url(../img/fondo1.png);
+    display: flex;
+    align-items: center;
+	height: 100px;
+}
+header .menu
+{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header .menu .logo
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .menu .logo img
+{
+    width: 70%;
+}
+/*header .menu .buscador
+{
+  width: 10%;
+  height: 30px;
+  background: rgba(236, 244, 248, 1);
+  border-radius: 30px;
+  padding: 0 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  left: 15px;
+}
+header .menu .buscador input
+{
+  background: transparent;
+  outline: none;
+  border: 0;
+  font-size: 14px;
+}*/
+header .menu nav
+
+{
+	display: flex;
+	justify-content: center;
+	
+}
+header .menu nav ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header .menu nav ul li
+{
+    
+    position: relative;
+    float: left;
+}
+header .menu nav ul li a
+{
+    font-size: 1em;
+    padding: 10px 20px ;
+    color: #fff;
+    display: block;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-right: 25px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+header .menu nav ul li a:hover
+{
+    color: var(--naranja);
+    transform: scale(1.1);
+}
+#menu
+{
+    display: none;
+
+}
+.menu-icono
+{
+    width: 25px;
+
+}
+
+.menu label
+{
+    cursor: pointer;
+    display: none;
+}
+.botones
+{
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 12px;
+	padding-right: 20px;
+}
+.boton 
+{
+	padding: 6px 12px ;
+	border: 1px solid #fff;
+	border-radius: 24px;
+	color: #fff;
+	text-decoration: none;
+}
+.boton:hover
+{
+	background:var(--naranja);
+}
+section 
+{
+	width: 100%;
+}
+section .portada
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondo1.png);
+   
+    display: flex;
+}
+
+section .portada .info 
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+
+}
+section .portada  .info .txt
+{
+	width: 70%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	
+}
+section .portada  .info .txt h1
+{
+     font-size: 3em;
+     color: #fff;
+     font-weight: 500;
+
+}
+section .portada  .info .info-b
+{
+	width: 30%;
+	;
+	border-radius: 24px;
+	border: 1px solid #fff;
+	transition: 0.3s;
+}
+section .portada  .info .info-b a 
+{
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.3em;
+	font-weight: 200;
+}
+section .portada  .info .info-b:hover
+{
+	background: var(--naranja);
+}
+section .portada .port-img 
+{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+section .portada .port-img img 
+{
+	width: 90%;
+}
+section .habilidades
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;;
+	padding-bottom: 20px;
+	
+}
+
+section .habilidades .titulo
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 5%;
+   box-sizing: border-box;
+
+}
+section .habilidades .titulo h1
+{
+	font-size: 2.5em;
+	color: #01153A;
+	font-weight: 600;
+}
+section .habilidades .cuadros 
+{
+	
+	width: 70%;
+	gap: 7%;
+	display: flex;
+	padding: 5%;
+
+}
+
+section .habilidades .cuadros .cuad 
+{
+	width: 28%;
+	background: #ffff;
+	height: 180px;
+	border-radius: 50px;
+	box-shadow: 4px 5px 6px 4px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+
+}
+section .habilidades .cuadros .cuad:hover
+{
+	transform: scale(1.1);
+}
+
+section .habilidades .cuadros .cuad .icon i 
+{
+	font-size: 4em;
+	color: var(--azul);
+}
+section .habilidades .cuadros .cuad .txt
+{
+	text-align: center;
+}
+section .habilidades .cuadros .cuad .txt p 
+{
+	font-size: 1.1em;
+	color: #000;
+}
+section .about 
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 5%;
+	box-sizing: border-box;
+	background: url(../img/fondo1.1.png);
+	gap: 60px;
+
+}
+section .about .titulo
+{
+   
+    text-align: left;
+
+}
+section .about .titulo h1 
+{
+	font-size: 2.5em;
+	font-weight: 500;
+	color: #fff;
+}
+section .about .imgs
+{
+	width: 100%;
+	display: flex;
+
+}
+section .about .imgs .kid
+{
+	width: 30%;
+	display: flex;
+	justify-content: center;
+}
+section .about .imgs .kid img 
+{
+	width: 90%;
+	object-fit: cover;
+	object-position: center;
+}
+section .about .imgs .map 
+{
+	width: 70%;
+	display: flex;
+	justify-content: center;
+}
+section .about .imgs .map img 
+{
+	width: 80%;
+}
+section .cursos
+{
+	padding-top: 5%;
+	box-sizing: border-box;
+	gap: 20px;
+	padding-bottom: 5%;
+}
+section .cursos h1
+{
+    font-size: 2em;
+    margin-left: 60px;
+    font-weight: 500;
+    color: #2E2E2E;
+}
+section .cursos hr 
+{
+	width: 53%;
+	border: solid 3px #41E8FF;
+	border-radius: 3px;
+	margin-left: 60px;
+}
+section .cursos .cards 
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+	padding-top: 80px;
+	gap: 50px;
+
+
+}
+section .cursos .cards .card
+{
+	width: 20%;
+	height: 60vh;
+	background: #ffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 20px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	gap: 20px;
+	align-items: center;
+	border-radius: 24px;
+	box-shadow: 4px 2px 6px 4px rgba(0, 0, 0, 0.3);
+	transition: 1s ease all;
+
+}
+section .cursos .cards .card:hover
+{
+	transform: scale(1.1);
+}
+section .cursos .cards .card img
+{
+	width: 100%;
+	object-position: center;
+	border-radius: 24px;
+	object-fit: cover;
+}
+section .cursos .cards .card .text
+{ 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+section .cursos .cards .card .text h2 
+{
+    font-size: 1em;
+    color: var(--azul);
+}
+section .cursos .cards .card .text p 
+{
+	font-size: 0.9em;
+}
+section .cursos .cards .card .down 
+{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+
+
+}
+
+section .cursos .cards .card .button
+{
+	width: 100px;
+	height: 30px;
+	background: var(--naranja);
+	border-radius: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+section .cursos .cards .card .button:hover
+{
+	background: var(--azul);
+}
+section .cursos .cards .card .button a
+{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+section .cursos .cards .card .like i 
+{
+	color: var(--naranja);
+	font-size: 1.5em;
+}
+
+.cert 
+{
+
+	background-image: url(../img/fondo1.png);
+	display: flex;
+	flex-direction: column;
+	padding: 5%;
+	height: 100vh;
+	
+
+}
+ .cert .titulo h1
+{
+	font-size: 2.5em;
+	font-weight: 500;
+	color: #fff;
+}
+ .cert .abajo 
+{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	
+
+}
+ .cert .abajo .izq
+{
+	display: flex;
+	align-items: center;
+	width: 20%;
+
+}
+
+ .cert .abajo .izq .txt
+{
+    width: 90%;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    padding: 5%;
+}
+ .cert .abajo .izq .txt p 
+{
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: 300;
+}
+ .cert .abajo .centro
+{
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+ .cert .abajo .centro img 
+{
+	width: 90%;
+	object-fit: cover;
+
+}
+ .cert .abajo .der
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	width: 40%;
+
+}
+ .cert .abajo .der .txt1
+{
+	display: flex;
+	width: 80%;
+	gap: 5%;
+}
+ .cert .abajo .der .txt1 p 
+{
+	font-size: 1.4em;
+	color: #fff;
+	font-weight: 400;
+
+}
+
+ .cert .abajo .der .tres 
+{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+
+}
+ .cert .abajo .der .tres .rec 
+{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #fff;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+ .cert .abajo .der .tres .rec a
+ {
+     color: #fff;
+     font-size: 1.4;
+     font-weight: 500;
+ }
+ footer
+ {
+ 	
+ 	background: var(--naranja);
+ 	display: flex;
+ 	padding: 10%;
+
+ }
+ footer .der 
+ {
+    width: 30%;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;  
+ }
+ footer .der a 
+ {
+ 	font-size: 1em;
+ 	color: #fff;
+ 	font-weight: 300;
+ }
+ footer .centro
+ {
+ 	width: 40%;
+ 	display: flex;
+ 	align-items: flex-end;
+ 	justify-content: center;
+ 	gap: 20px;
+ }
+  footer .centro i 
+  {
+  	color: #fff;
+  	font-size: 2em;
+  }
+  footer .izq 
+  {
+  	width: 30%;
+  	display: flex;
+  	flex-direction: column;
+  	text-align: right;
+  	gap: 10px;
+
+  }
+    footer .izq a 
+    {
+    	color: #fff;
+    	text-decoration: none;
+    	font-size: 1em ;
+    }
+	
+@media (max-width:650px)
+{
+	header
+{
+    
+	height: 60px;
+}
+header .menu
+{
+    height: 60px;
+    
+}
+header .menu .logo
+{
+    width: 40%;
+}
+header .menu .logo img
+{
+    width: 50%;
+}
+	header .menu nav ul
+{
+    display:none;
+}
+section .portada .info 
+{
+	width: 100%;
+}
+section .portada
+{
+    flex-direction: column;
+}
+section .portada  .info .txt
+{
+	margin-top: 20px;
+	
+}
+section .portada .port-img 
+{
+	width: 100%;
+	
+}
+section .portada .port-img img 
+{
+	width: 80%;
+}
+section .habilidades .cuadros 
+{
+	
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+section .habilidades .cuadros .cuad 
+{
+	width: 70%;
+	margin-bottom: 30px;
+
+}
+section .about 
+{
+	flex-direction: column;
+	background-repeat: no-repeat;
+	background-size: 350%;
+
+}
+section .about .titulo
+{
+   
+    text-align: center;
+
+}
+section .about .imgs
+{
+	flex-direction: column;
+
+}
+section .about .imgs .kid
+{
+	width: 100%;
+	align-items: center;
+}
+section .about .imgs .kid img 
+{
+	width: 80%;
+}
+section .about .imgs .map 
+{
+	width: 100%;
+}
+section .about .imgs .map img 
+{
+	width: 90%;
+}
+section .cursos
+{
+	width: 100%;
+	flex-direction: column;
+}
+section .cursos .cards 
+{
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	
+	padding-top: 80px;
+
+}
+section .cursos .cards .card
+{
+	width: 60%;
+}
+.cert 
+{
+
+	
+	height: auto;
+	
+
+}
+.cert .abajo 
+{
+	flex-direction: column;
+	width: 100%;
+}
+.cert .titulo h1
+{
+	text-align: center;
+}
+.cert .titulo h2
+{
+	text-align: center;
+}
+.cert .abajo .izq
+{
+	margin-top: 20px;
+	width: 100%;
+
+}
+.cert .abajo .centro
+{
+	width: 100%;
+}
+.cert .abajo .der 
+{
+	width: 100%;
+
+}
+.cert .abajo .der .tres 
+{
+	width: 100%;
+	flex-direction: row;
+
+}
+section .cursos h1
+{
+    font-size: 2em;
+    margin-left: 60px;
+    font-weight: 500;
+    color: #2E2E2E;
+}
+}
